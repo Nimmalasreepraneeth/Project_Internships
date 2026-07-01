@@ -1,0 +1,42 @@
+Time resolution is 1 ps
+===============================================
+      32-bit RISC Processor Simulation
+===============================================
+Time=0 | PC=0 | Instr=00221820 | ALU_Result=15 | Zero=0
+Time=15000 | PC=4 | Instr=00222022 | ALU_Result=5 | Zero=0
+Time=25000 | PC=8 | Instr=00222824 | ALU_Result=0 | Zero=1
+Time=35000 | PC=12 | Instr=00223025 | ALU_Result=15 | Zero=0
+Time=45000 | PC=16 | Instr=8c270004 | ALU_Result=14 | Zero=0
+Time=55000 | PC=20 | Instr=ac270008 | ALU_Result=18 | Zero=0
+Time=65000 | PC=24 | Instr=10220002 | ALU_Result=5 | Zero=0
+Time=75000 | PC=28 | Instr=xxxxxxxx | ALU_Result=x | Zero=x
+Time=85000 | PC=32 | Instr=xxxxxxxx | ALU_Result=x | Zero=x
+Time=95000 | PC=36 | Instr=xxxxxxxx | ALU_Result=x | Zero=x
+Time=105000 | PC=40 | Instr=xxxxxxxx | ALU_Result=x | Zero=x
+
+===============================================
+          REGISTER FILE CONTENTS
+===============================================
+R0  = 0
+R1  = 10
+R2  = 5
+R3  = 15
+R4  = 5
+R5  = 0
+R6  = 15
+R7  = 100
+
+===============================================
+          DATA MEMORY CONTENTS
+===============================================
+MEM[0] = 0
+MEM[1] = 0
+MEM[2] = 0
+MEM[3] = 100
+MEM[4] = 0
+MEM[5] = 0
+
+===============================================
+Simulation Completed Successfully
+===============================================
+$finish called at time : 110 ns : File "C:/Users/prane/project_Internships/project_Internships.srcs/sim_1/new/RISC_tb.v" Line 79
