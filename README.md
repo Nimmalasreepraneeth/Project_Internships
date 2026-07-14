@@ -32,11 +32,14 @@ A collection of 4 comprehensive FPGA projects developed during internship, showc
    - **Location:** [`Binary_multiplier/`](Binary_multiplier/)
    - **Description:** Hardware multiplier for binary numbers
    - **Features:**
+     - **Unsigned Multiplier:** Positive numbers only (0 to 15)
+     - **Signed Multiplier:** Positive & negative numbers (-8 to +7)
      - 4-bit x 4-bit multiplication
      - 8-bit output result
      - Optimized logic circuits
-   - **Files:** `src/Binary_multiplier.v`, `src/Binary_multiplier_tb.v`
-   - **Status:** ✅ Simulated & Verified
+   - **Unsigned Version:** `Unsigned_multiplier/Unsigned_multiplier.v`
+   - **Signed Version:** `Signed_multiplier/Signed_multiplier.v`
+   - **Status:** ✅ Unsigned Complete | ✅ Signed Complete
 
 ### 4. **FPGA RISC** - RISC Processor Implementation
    - **Location:** [`RISC_32bit/`](RISC_32bit/)
@@ -49,6 +52,28 @@ A collection of 4 comprehensive FPGA projects developed during internship, showc
      - Datapath implementation
    - **Files:** `src/RISC_CPU.v`, `src/ALU.v`, `src/Controller.v`
    - **Status:** ✅ Simulated & Verified
+
+---
+
+## 🔍 Binary Multiplier - Unsigned vs Signed
+
+### **Unsigned Multiplier**
+- Multiplies **positive numbers only**
+- Example: 5 × 3 = 15 ✅
+- Range: 0 to 15 (for 4-bit)
+
+### **Signed Multiplier**
+- Multiplies **positive AND negative numbers**
+- Uses 2's complement for negative numbers
+- Example: (-5) × 3 = -15 ✅
+- Example: (-5) × (-3) = 15 ✅
+- Range: -8 to +7 (for 4-bit)
+
+| Feature | Unsigned | Signed |
+|---------|----------|--------|
+| Positive numbers | ✅ | ✅ |
+| Negative numbers | ❌ | ✅ |
+| Use cases | Graphics, basic math | DSP, sensors, signals |
 
 ---
 
